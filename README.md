@@ -31,8 +31,21 @@ Reached a Test RMSE of 17.81 g/km, providing a reliable baseline for "what-if" e
 
 The "Financial Zombie" IdentificationUsing the model, I performed a stress-test on the Petrol/Armored segment to identify vehicles that are mathematically unviable under 2026/2027 regulations. A "Financial Zombie" is a vehicle where the projected EU $CO_2$ penalty exceeds the unit's operating profit.
 
-### The Math:
-With 2026 EU penalties at €95 per g/km over the target (93.6 g/km for cars/vans), a vehicle emitting 442 g/km (like the S 680 Guard) faces a penalty of approximately €33,100 per unit.
+### The Math: 
+Financial Risk Audit (2026 Strategy)To calculate the business impact, I benchmarked the fleet against Mercedes-Benz’s 2026 Financial Guidance, which targets an 8% Adjusted Return on Sales (RoS).
+
+#### The Core Logic:The model identifies "Financial Zombies"—vehicles where the EU compliance penalty is higher than the unit’s profit.
+Unit Profit: Estimated at €4,400 (8% margin on an average €55,000 retail price).
+Compliance Debt: Calculated using the 2026 EU penalty rate of €95 per g/km for every gram above the 93.6 g/km target.
+
+#### The "Zombie" Formula: $$\text{Penalty} = (\text{Actual } CO_2 - 93.6) \times 95$$  
+If Penalty > €4,400, the vehicle is a net loss for the company.
+
+#### Stress-Test Case: The S 680 Guard (Petrol V12)
+Using the model on the heaviest petrol unit (4,255 kg) reveals the extreme financial risk
+* Actual Emissions: 442 g/kmCalculated
+* Penalty: €33,098 per unit
+* The Verdict: This single vehicle creates a €33k compliance debt, which is 7.5x higher than the average unit profit.
 
 ### Findings: 
 The audit flagged 180,005 units as high-risk "Zombies." For the company, this represents a €3.87 Billion cumulative liability that threatens the projected 6%–8% Adjusted Return on Sales (ROS).
