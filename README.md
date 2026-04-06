@@ -52,4 +52,15 @@ The audit flagged 180,005 units as high-risk "Zombies." For the company, this re
 
 
 ## 6. Conclusion & Future Scope:
-The model successfully bridges the gap between static registration data and predictive engineering. For a manufacturer like Daimler Truck, this tool can be scaled to Predict RDE (Real Driving Emissions) by integrating high-frequency sensor data.Optimize Fleet Mix by simulating the $CO_2$ impact of adding new vehicle configurations before they hit the production line.Ensure Penalty Avoidance by forecasting the fleet-wide average against EU 2027/2030 targets.
+The model successfully bridges the gap between static registration data and predictive engineering, transforming $CO_2$ from a retrospective reporting metric into a proactive design variable.
+
+### Key Project Outcomes:
+
+#### The "Digital Twin" Breakthrough: By isolating the Petrol ICE segment, the model moved from a near-zero correlation ($r=-0.01$) to a high-precision $R^2$ of 0.90. This proves that mass remains the primary physical lever for emission control in combustion-based transport.
+
+#### Financial Risk Mapping: The project transitioned from physics to finance by identifying "Financial Zombies"—units where EU penalties (averaging €33,000 for high-mass models) effectively negate the projected 8% profit margin.
+
+#### Future Scope:
+* Predictive Fleet Mixing: Scaling the model to simulate the $CO_2$ impact of adding new vehicle configurations before they hit the production line, ensuring the fleet-wide average stays below the 93.6 g/km target.
+* Real-World Correlation (RDE): Integrating high-frequency sensor data to evolve this model from laboratory WLTP values to Real Driving Emissions (RDE), accounting for the stricter Euro 7 durability standards.
+* Multi-Fuel Integration: Expanding the Neural Network architecture to include Diesel and Hybrid categories,  allowing for a total portfolio view of regulatory liability.
