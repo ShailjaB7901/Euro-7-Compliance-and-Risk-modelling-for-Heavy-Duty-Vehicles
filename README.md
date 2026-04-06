@@ -3,8 +3,9 @@ As the European Union transitions from Euro 6 to the more stringent Euro 7 regul
 
 ## 2. The Challenge: The "Regulatory Cliff"
 
-Stricter Durability: Euro 7 extends compliance requirements to 875,000 km for heavy trucks, making "Cold Start" and "Low-Load" emissions a massive financial liability.
-The Data Blind Spot: Standard laboratory values (WLTP) often fail to show linear relationships across mixed fleets (EVs, Hybrids, ICEs). My analysis identifies these hidden "Compliance Leaks" before they trigger EU penalties.
+Euro 7 introduces stricter and longer durability requirements, extending compliance up to 875,000 km for heavy-duty vehicles. This significantly increases the impact of cold-start and low-load emissions over a vehicle’s lifetime.
+At the same time, standard laboratory metrics (WLTP) often fail to capture consistent relationships across mixed fleets (EVs, hybrids, and ICE vehicles), creating a critical data blind spot.
+This project addresses that gap by identifying hidden compliance risks before they translate into financial penalties.
 
 ## 3. Data Engineering & InsightsSegment Decoupling:
 
