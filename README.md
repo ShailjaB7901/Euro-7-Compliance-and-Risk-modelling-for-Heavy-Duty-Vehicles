@@ -1,5 +1,17 @@
-# Euro 7 Compliance and Risk modelling for Heavy Duty Vehicles
-As the European Union transitions from Euro 6 to the more stringent Euro 7 regulations (2027/2028), automotive manufacturers face a critical "Compliance Gap." This project utilizes a dataset of 250,000+ vehicle registrations to build a predictive "Digital Twin" of fleet emissions. By identifying the physical drivers of $CO_2$, the model provides a strategic roadmap for engineering priorities in the Mercedes-Benz heavy-duty segment.This project builds a Digital Twin to identify "Compliance Leaks" within the highest-risk segment: High-Mass Petrol Vehicles
+# Euro 7 Compliance and Risk modelling for Vehicles
+
+## 1. Data Provenance & Pre-processing
+
+The foundation of this audit is the European Environment Agency (EEA) official registry of New Passenger Cars. To ensure the model reflects the current technological and regulatory landscape, a multi-stage extraction and filtration pipeline was developed.
+
+#### Data Source: Primary datasets were retrieved from the EEA’s Monitoring of $CO_2$ Emissions repository, covering a population of over 1.2 million vehicle registrations.
+
+Temporal Filtering: The dataset was restricted to the 2022, 2023, and 2024 reporting cycles. This specific window was chosen to capture the transition to WLTP (Worldwide Harmonised Light Vehicles Test Procedure) standards, providing a high-fidelity baseline for 2026/2027 forecasting.
+
+Manufacturer Focus: Filtered for Mercedes-Benz AG to align with corporate-specific emission profiles.
+
+
+As the European Union transitions from Euro 6 to the more stringent Euro 7 regulations (2027/2028), automotive manufacturers face a critical "Compliance Gap." This project utilizes a dataset of 780,000+ vehicle registrations to build a predictive "Digital Twin" of fleet emissions. By identifying the physical drivers of $CO_2$, the model provides a strategic roadmap for engineering priorities in the Mercedes-Benz heavy-duty segment.This project builds a Digital Twin to identify "Compliance Leaks" within the highest-risk segment: High-Mass Petrol Vehicles
 
 ## 2. The Challenge: The "Regulatory Cliff"
 
