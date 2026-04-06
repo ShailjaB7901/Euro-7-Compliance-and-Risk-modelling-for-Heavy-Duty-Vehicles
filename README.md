@@ -7,7 +7,7 @@ Euro 7 introduces stricter and longer durability requirements, extending complia
 At the same time, standard laboratory metrics (WLTP) often fail to capture consistent relationships across mixed fleets (EVs, hybrids, and ICE vehicles), creating a critical data blind spot.
 This project addresses that gap by identifying hidden compliance risks before they translate into financial penalties.
 
-## 3. Data Engineering & InsightsSegment Decoupling:
+## 3. Data Engineering & Insights Segment Decoupling:
 
 Initial analysis of the total fleet showed a near-zero correlation ($r = -0.01$) between mass and emissions.
 The Breakthrough: By segmenting the data, a 0.88 correlation was discovered within the Petrol (ICE) segment ($n = 133,991$). This proved that for combustion-based transport, Vehicle Mass remains the primary engineering lever for decarbonization.
@@ -15,13 +15,13 @@ The Breakthrough: By segmenting the data, a 0.88 correlation was discovered with
 ### Preprocessing: 
 I implemented a robust pipeline including grouped imputation for missing engine data, target scaling to prevent gradient explosion, and feature normalization.
 
-## 4. Technical Implementation (The "How")Architecture:
+## 4. Technical Implementation (The "How") Architecture:
 
 Developed a Deep Neural Network using PyTorch with a multi-layer perceptron (MLP) structure (32-16-1 hidden layers).
 Optimization Strategy:Loss Function: Mean Squared Error (MSE).Stability: Utilized Gradient Clipping and Target Normalization to handle high-variance outliers in heavy-duty vehicle weights.
 Validation: Employed an 80/20 train-test split to ensure model generalization.
 
-## 5. Results & ImpactPredictive Accuracy: 
+## 5. Results & Impact Predictive Accuracy: 
 
 Achieved a Test R² Score of 0.9043, meaning the model explains over 90% of emission variance.
 
